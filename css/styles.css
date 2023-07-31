@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import url(base/estandarizacion.css);
 @import url(layout/header.css);
@@ -90,3 +91,97 @@ Seccion proyecto */
 
 }
 
+=======
+
+@import url(base/estandarizacion.css);
+@import url(layout/header.css);
+@import url(layout/proyectos.css);
+@import url(layout/ubicacion.css);
+@import url(layout/caracteristicas.css);
+@import url(layout/footer.css);
+@import url(layout/masterplan.css);
+@import url(layout/financiamiento.css);
+
+
+/*---------------------------------
+
+HEADER */
+
+
+
+ 
+/*------------------------------
+
+Seccion proyecto */
+
+/*
+
+.proyecto_logo{
+    width: 400px;
+}
+.proyecto_p{
+    max-width: 600px;
+    text-align: center;
+}
+
+
+
+*/
+
+
+@media (max-width: 500px) {
+    .header__logoWrapper p, .header__logoWrapper img, .header__logoWrapper h2 {
+
+        width: calc(100% - 60px); /* Ajusta el ancho en dispositivos móviles */
+        margin-left: 30px; /* Agrega un margen izquierdo de 30px */
+        margin-right: 30px; /* Agrega un margen derecho de 30px */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .header__logoWrapper h2 {
+        font-size: 5vw;
+        letter-spacing: 2px;
+    }
+
+    .ubicacion__p{
+        padding: 10px 50px;
+        text-align: center;
+    }
+
+
+    
+}
+
+
+@media (max-width: 780px) {
+    .slide{
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+  
+    .caption {
+        
+        position:static;
+        text-align: center;
+        margin-top: 30px;
+        
+       
+        width: 90%;
+        background-color: #EBF5FA;
+        color: #000000;
+        
+        font-size: 14px;
+      }
+
+}
+
+>>>>>>> 1563bb598d4e1982d2a72710bbf59ef2fcfeb09c
