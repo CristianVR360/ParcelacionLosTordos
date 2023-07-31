@@ -12,27 +12,39 @@ floatingButton.addEventListener('click', function() {
 
 
 
-//Google maps
-function initMap() {
-  // Coordenadas de la ubicación donde deseas colocar el pin
-  var location = { lat: -39.251513148501466, lng: -72.3120835597234 };
-   
 
-  // Crear un nuevo mapa en el elemento con el ID "map"
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: location,
-    zoom: 12 // Nivel de zoom del mapa
-  });
 
-  // Crear un nuevo marcador en la ubicación especificada
-  var marker = new google.maps.Marker({
-    position: location,
-    map: map,
-    title: 'Molco Nativo' // Título del marcador (opcional)
-  });
+//ANIMACIONES FADE IN
+
+// Función para verificar si un elemento es visible en la ventana del navegador
+function esVisible(elemento) {
+  const rect = elemento.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
 }
 
-//menu principal
+// Función para agregar la clase de animación cuando la sección es visible
+function animarElemento() {
+  const seccion = document.querySelector('.proyecto');
+  const img = seccion.querySelector('.proyecto__img');
+  const parrafo = seccion.querySelector('.proyecto__p');
+  
+  if (esVisible(seccion)) {
+    img.classList.add('fade-in');
+    parrafo.classList.add('fade-in')
+  }
+}
+
+// Evento de scroll para verificar cuando la sección es visible
+window.addEventListener('scroll', animarElemento);
+window.addEventListener('resize', animarElemento);
+animarElemento();
+
+//footer
 
 
 /*

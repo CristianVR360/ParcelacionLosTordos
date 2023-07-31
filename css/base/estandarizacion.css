@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    
+  
+  }
+  
+  :root {
+    --color-primario: #A09FB1;
+    --light-shades: #F4F3E6;
+    --light-shades-transparent: rgba(244, 243, 230, );
+    --light-accent: #F58867;
+    --dark-shades: #423D54;
+    --dark-shades-transparent: rgba(66, 61, 84, 0.4);
+    --dark-accent: #E14B5B;
+
+   
+        /*backgrounds:*/
+     
+        --color-section1: rgba(225, 75, 91, 1); /* Color base */
+        --color-section2: rgba(247, 195, 194, 1); /* Más claro que el color base */
+        --color-section3: rgba(177, 50, 52, 1); /* Más oscuro que el color base */
+        --color-sectionTransparent: rgba(225, 75, 91, 0.5); /* Transparente del color base */
+        --color-footer: rgba(32, 32, 32, 1); /* Neutro oscuro */
+        --color-menu: rgba(247, 195, 194, 1); /* Más claro que el color base */
+     
+        /*texts*/
+        --color-h2: rgba(255, 255, 255, 1); /* Blanco */
+        --color-h2contraste: rgba(32, 32, 32, 1); /* Neutro oscuro */
+        --color-p: rgba(255, 255, 255, 1); /* Blanco */
+        --color-pcontraste: rgba(32, 32, 32, 1); /* Neutro oscuro */
+     
+        /*cards backgrounds*/
+        --color-cardCaracteristicas: rgba(247, 247, 247, 1); /* Neutro claro */
+        --color-cardForm: rgba(247, 247, 247, 1); /* Neutro claro */
+     
+     
+  
+  }
+  
+
+
+  html, body {
+    height: 100%;
+
+  }
+  .separador {
+    height: 66px;
+    
+  }
+  .websiteSections{
+    color: #000;
+    z-index: 190;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100% - 46px);
+    position: relative;
+  
+  }
+
+  .websiteSections h2{
+  
+        font-size: 1.5em; /* Tamaño del texto. Es recomendable usar unidades em/rem para garantizar la accesibilidad */
+        font-weight: 600; /* El grosor de la fuente. 400 es normal, 700 es negrita. Escoge un valor que se vea bien con tu fuente */
+        text-align: center; /* Alineación del texto. Cambia a left o right si es necesario */
+        margin: 20px 0; /* Espaciado alrededor del título. Ajusta según tus necesidades */
+        padding-bottom: 10px; /* Espaciado por debajo del título. Ajusta según tus necesidades */
+        border-bottom: 2px solid #ddd; /* Una línea fina debajo del título para dar énfasis. Cambia el color según tu diseño */
+        letter-spacing: 1px; /* Espaciado entre letras. Puede ayudar a mejorar la legibilidad y estética */
+        text-transform: uppercase; /* Transforma todo el texto a mayúsculas. Remueve si no es necesario */
+ 
+    
+  }
+  
+
+  .transparentSection{
+    background-color: var(--dark-shades-transparent);
+   
+      }

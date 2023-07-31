@@ -1,0 +1,54 @@
+.financiamiento__contactForm {
+    width: 80%;
+    max-width: 350px; /* Hacemos el formulario más pequeño */
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--dark-shades-transparent)
+}
+
+.financiamiento__h2{
+    color:white;
+    padding-bottom: 20px;
+    
+}
+
+.financiamiento__contactForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.financiamiento__contactForm label {
+    margin-bottom: 20px;
+    color: white; /* Cambia esto al color que desees para el texto */
+    line-height: 1px;
+    font-weight: 800;
+    
+}
+
+.financiamiento__contactForm input,
+.financiamiento__contactForm textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid white; /* Cambia esto al color que desees para el borde */
+    border-radius: 5px; /* Cambia esto si deseas bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para facilitar la lectura */
+    color: black; /* Cambia esto al color que desees para el texto del formulario */
+}
+
+.financiamiento__contactForm .reserve-btn {
+    cursor: pointer;
+    background-color: red; /* Cambia esto al color que desees para el botón */
+    color: white; /* Cambia esto al color que desees para el texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .financiamiento__contactForm {
+        max-width: 100%; /* Hacemos el formulario más grande en dispositivos móviles */
+    }
+}
+

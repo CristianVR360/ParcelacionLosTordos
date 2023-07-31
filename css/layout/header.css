@@ -1,0 +1,139 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    
+  }
+  
+  .header__videoBkg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  
+  .header__logoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+  }
+  
+  .header__logoWrapper:before {
+    content: "";
+    position: absolute;
+    top: -1;
+    left: -1;
+    width: 100vw; /* Cambiado a 100vw para ocupar todo el ancho de la pantalla */
+    height: 100vh; /* Cambiado a 100vh para ocupar todo el alto de la pantalla */
+    background-color: rgba(66, 61, 84, 0.5); /* Ajusta la opacidad según necesites */
+    z-index: -1;
+  }
+  
+  
+  .header__logo {
+    width: 300px;
+    display: block;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header__location {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 11px;
+    margin-left: 8px;
+    font-weight: 400;
+    text-shadow: 1px 0px 3px var(--dark-shades);
+  }
+  
+  .header p {
+    font-weight: 100;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+  }
+  
+  .header__floatingButton {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 300;
+    background-color: var(--dark-accent);
+    color: var(--light-shades);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  
+  
+  }
+  
+  .header__mainNav {
+    display: none;
+    position: fixed;
+  
+    bottom: 56px;
+    left: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 200;
+    transition: top 0.3s ease-in-out;
+   
+  }
+  
+  
+  .header__mainNav.show {
+    display: block;
+    
+   
+    animation:  fadeIn 1s, desplazamiento 0.7s ease-in-out;
+      
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes desplazamiento {
+    0% {
+      bottom: 30px;
+    }
+    100% {
+      bottom: 56px;
+    }
+  }
+  
+  
+  .header__mainNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header__mainNav li {
+    background-color: var(--dark-accent);
+    margin: 5px 0;
+    padding: 2px 10px;
+    transition: top 0.9s ease;
+  }
+  
+  .header__mainNav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  

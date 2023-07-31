@@ -1,0 +1,70 @@
+
+.proyecto{
+    background-color: rgb(245, 238, 238);
+   
+    
+   
+  }
+  .proyecto h2{
+    margin: 20px 20px; 
+    text-align: center;
+    max-width: 700px;
+ 
+  }
+  .proyecto__p{
+    color: black;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+  
+  }
+  
+  .proyecto__p.fade-in {
+    animation: fade-in-fwd 5s cubic-bezier(.39, .575, .565, 1.000) both;
+  }
+  
+  .proyecto__imgWrapper{
+    width: 800px;
+    height: 400px;
+ 
+    
+  }
+  
+  .proyecto__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+  }
+  .proyecto__img.fade-in {
+    animation: fade-in-fwd 1s cubic-bezier(.39, .575, .565, 1.000) both;
+  }
+  
+  @keyframes fade-in-fwd{
+    0%{
+      transform:translateZ(-80px);
+      opacity:0}
+    100%{
+      transform:translateZ(0);
+      opacity:1}
+  }
+
+
+
+  @media (max-width: 500px), (max-height: 700px) {
+  
+      .proyecto__p{
+      padding: 50px;
+      text-align: center;
+      margin-top: 5px;
+  }
+  
+  .proyecto__imgWrapper{
+    width: 100%;
+    height: 260px;
+    
+  }
+  
+}
+  
